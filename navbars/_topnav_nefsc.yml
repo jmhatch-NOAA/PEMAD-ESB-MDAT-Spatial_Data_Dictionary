@@ -1,0 +1,15 @@
+website:
+  navbar:
+    background: $navy-blue-pantone
+    search: true
+    right:
+      - text: "NEFSC Resources"
+        menu:
+          - href: https://www.fisheries.noaa.gov/about/northeast-fisheries-science-center
+            text: NEFSC Homepage
+          - href: https://mdeb-nefsc-noaa.hub.arcgis.com/
+            text: MDAT GIS Data Hub
+      - text: "Software & Documentation"
+        menu:
+          - href: https://github.com/nefsc
+            text: NEFSC GitHub Organization

@@ -1,0 +1,15 @@
+project: 
+  type: website
+  preview:
+    port: 4400
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme/theme.scss] 
+      # dark: [cosmo, theme/theme-dark.scss]
+
+metadata-files:
+  - theme/_website.yml
+  - navbars/_topnav_nefsc.yml
+  - _metadata.yml

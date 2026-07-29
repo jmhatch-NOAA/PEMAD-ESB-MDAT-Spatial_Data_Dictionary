@@ -1,0 +1,50 @@
+/*-- scss:defaults --*/
+
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
+
+$font-family: "Atkinson Hyperlegible", sans-serif;
+
+// Base document colors
+$body-bg: white;
+$body-color: #181818;
+
+// NOAA Fisheries Primary Palette
+$noaa-light-blue: #0093D0;
+$noaa-dark-blue: #0055A4;
+$navy-blue-pantone: #00467F;
+
+// Grays
+$neutral-gray: #646464;
+$gray85: #7B7B7B;
+$gray65: #9A9A9A;
+$gray30: #E8E8E8;
+$gray15: #D0D0D0;
+
+// West Coast Secondary Extended Palette ("Waves")
+$west-deep: #007078;
+$west-mid: #008998;
+$west-vibrant: #1ECAD3;
+
+// Southeast Secondary Extended Palette ("Seagrass")
+$southeast-deep: #007934;
+$southeast-mid: #4C9C2E;
+$southeast-vibrant: #93D500;
+
+// Alaska Secondary Extended Palette ("Crustacean")
+$alaska-deep: #BC4700;
+$alaska-mid: #D65F00;
+$alaska-vibrant: #FF8300;
+
+// Pacific Islands Secondary Extended Palette ("Coral")
+$pacific-island-deep: #B2292E;
+$pacific-island-mid: #D02C2F;
+$pacific-island-vibrant: #FF4438;
+
+// Mid-Atlantic Secondary Extended Palette ("Urchin")
+$midatlantic-deep: #575195;
+$mid-atlantic-mid: #625BC4; 
+$mid-atlantic-vibrant: #7F7FFF;
+
+// Font colors
+$headings-color: $navy-blue-pantone !default;
+$link-color: #216f9b !default;

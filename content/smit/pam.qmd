@@ -1,0 +1,126 @@
+---
+title: "Passive Acoustic Monitoring Survey"
+order: 13
+---
+
+```{r}
+#| echo: false
+# feature server url
+pam_url = 'https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/Passive_Acoustic_Monitoring_Survey/FeatureServer'
+
+# metadata
+pam_meta = arcgisutils::fetch_layer_metadata(url = pam_url)
+```
+
+### ArcGIS Feature Service
+
+Click [here](`r pam_url`).
+
+```{r}
+#| echo: false
+# InPort
+inport_href = pam_meta$serviceDescription |>
+  rvest::read_html() |>
+  rvest::html_nodes('a') |>
+  rvest::html_attr('href')
+inport_href = inport_href[2]
+
+# description
+pam_desc = gsub('<a[^>]*>InPort Metadata</a>', '', pam_meta$serviceDescription)
+pam_desc = gsub('<p>|<br>|</p>|\\n', '', pam_desc)
+
+# only grab the 1st two sentences
+pam_sentences = stringr::str_split(pam_desc, pattern = '\\.') |>
+  unlist()
+pam_desc = paste0(pam_sentences[1], '.', paste(pam_sentences[2:3], collapse = '.'), '.')
+```
+
+### InPort Metadata
+
+Yes, see [here](`r inport_href`).
+
+### Description
+
+`r pam_desc`
+
+### Spatial Extent
+
+```{r}
+#| echo: false
+# get layer bounding box
+pam_bb = data.frame(
+  x = c(pam_meta$fullExtent$xmin, pam_meta$fullExtent$xmax), 
+  y = c(pam_meta$fullExtent$ymin, pam_meta$fullExtent$ymax)) |>
+  sf::st_as_sf(coords = c('x', 'y'), crs = pam_meta$fullExtent$spatialReference$latestWkid) |>
+  sf::st_bbox() |>
+  sf::st_as_sfc() |>
+  sf::st_transform(4326)
+  
+# leaflet map
+leaflet::leaflet() |>
+  leaflet::addTiles() |>
+  leaflet::addPolygons(data = pam_bb)
+```
+
+### Layers
+
+```{r}
+#| echo: false
+pam_meta$layers |>
+  dplyr::select(id, name, type, geometryType) |>
+  knitr::kable()
+```
+
+### Fields
+
+```{r}
+#| echo: false
+#| results: asis
+# feature server url
+rwsc_pam_url = 'https://rwsc.env.duke.edu/arcgis/rest/services/Passive_Acoustic_Monitoring/MapServer/1'
+
+# open layer
+rwsc_pam_layer = arcgislayers::arc_open(url = rwsc_pam_url)
+
+# get fields
+rwsc_pam_fields = arcgislayers::list_fields(rwsc_pam_layer) |>
+  dplyr::select(name, alias, type) |>
+  dplyr::rename(dataType = type)
+
+# get field descriptions
+rwsc_pam_layer_meta = 'https://rwsc.env.duke.edu/arcgis/rest/services/Passive_Acoustic_Monitoring/MapServer/1/metadata' |>
+  xml2::read_xml()
+
+# fields
+field_names = rwsc_pam_layer_meta |>
+  xml2::xml_find_all(xpath = './/attrlabl') |>
+  xml2::xml_text()
+field_names = field_names[field_names != 'Shape']
+  
+# descriptions
+field_desc = rwsc_pam_layer_meta |>
+  xml2::xml_find_all(xpath = './/attrdef') |>
+  xml2::xml_text()
+
+# add descriptions
+field_df = data.frame(name = field_names |> tolower(), description = field_desc)
+rwsc_pam_fields = rwsc_pam_fields |>
+  dplyr::left_join(field_df, by = 'name') |>
+  dplyr::select(name, alias, description, dataType) |>
+  dplyr::filter(name != 'objectid')
+
+## add in oid and survey_name
+rwsc_pam_fields = dplyr::bind_rows(
+  data.frame(name = 'oid', alias = 'OID', description = 'Original object ID', dataType = 'esriFieldTypeBigInteger'),
+  data.frame(name = 'survey_name', alias = 'SURVEY NAME', description = 'Name of NEFSC scientific survey', dataType = 'esriFieldTypeString'),
+  rwsc_pam_fields
+  )
+
+# layer metadata
+pam_layer = arcgisutils::fetch_layer_metadata(url = paste0(pam_url, '/0'))
+
+# output
+cat('\n####', pam_layer$name, '\n')
+  print(knitr::kable(rwsc_pam_fields))
+cat('\n')
+```

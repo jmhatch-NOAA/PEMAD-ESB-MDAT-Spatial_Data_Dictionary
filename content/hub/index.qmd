@@ -1,0 +1,69 @@
+---
+title: "GIS Data Hub"
+order: 2
+---
+
+Watch these screen capture videos for assistance in navigating the Northeast Fisheries Science Center Marine Development GIS Data Hub.
+
+## Explore by Category
+Explore datasets and maps by category.
+
+<video width="640" height="400" controls>
+  <source src="image/category_screencapture.webm" type= "video/webm">
+  Your browser does not support the video tag. 
+  
+</video>
+
+## View all Datasets
+Use the gallery application to view all datasets, search datasets by name, open the dataset landing page, and view the dataset in ArcGIS Online Map Viewer. 
+
+<video width="640" height="400" controls>
+  <source src="image/searchapp_screencapture.webm" type= "video/webm">
+  Your browser does not support the video tag. 
+  
+</video>
+
+## Use the Interactive Mapper
+Use the interactive mapping application to view NOAA NEFSC data alongside BOEM marine development data. Toggle data layers on and off, view the map legend, and click on the map for more information on map features.
+
+<video width="640" height="400" controls>
+  <source src="image/mapper_screencapture.webm" type= "video/webm">
+  Your browser does not support the video tag. 
+  
+</video>
+
+## Download Data
+Download datasets from the Data Hub.
+
+<video width="640" height="400" controls>
+  <source src="image/download_screencapture.webm" type= "video/webm">
+  Your browser does not support the video tag. 
+  
+</video>
+
+## Filter Data
+Filter data before downloading. 
+
+<video width="640" height="400" controls>
+  <source src="image/filterdata_screencapture.webm" type= "video/webm">
+  Your browser does not support the video tag. 
+  
+</video>
+
+## View Metadata
+View metadata for datasets on the Data Hub. 
+
+<video width="640" height="400" controls>
+  <source src="image/meta_screencapture.webm" type= "video/webm">
+  Your browser does not support the video tag. 
+  
+</video>
+
+## View Data Source
+View ArcGIS REST Services Directory for datasets. 
+
+<video width="640" height="400" controls>
+  <source src="image/datasource_screencapture.webm" type= "video/webm">
+  Your browser does not support the video tag. 
+  
+</video>

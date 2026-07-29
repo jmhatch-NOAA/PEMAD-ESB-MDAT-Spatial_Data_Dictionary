@@ -1,1 +1,18 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
 
+.DS_Store
+/.quarto/
+/_site/
+
+.devcontainer
+.github/dependabot.yml
+jovyan
+README.html
+README_files/
+
+**/*.quarto_ipynb
+.positai

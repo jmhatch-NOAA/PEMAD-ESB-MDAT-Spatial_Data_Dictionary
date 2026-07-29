@@ -1,0 +1,55 @@
+website: 
+  page-navigation: true
+  repo-actions: [source, issue]
+  repo-branch: docs
+  favicon: theme/images/favicon_io/favicon.ico
+  
+  page-footer:
+    background: $navy-blue-pantone
+    foreground: $white
+    right: |
+        [NOAA](https://noaa.gov) <br>
+        [NOAA Fisheries](https://fisheries.noaa.gov) <br>
+        [Northeast Fisheries Science Center](https://www.fisheries.noaa.gov/about/northeast-fisheries-science-center)
+
+        This page is built with [Quarto](https://quarto.org/). &copy; CC-1.0
+    left: |
+        NOAA National Marine Fisheries Service <br>
+        Northeast Fisheries Science Center <br>
+        Narragansett Laboratory <br>
+        28 Tarzwell Drive <br>
+        Narragansett RI 02882
+  
+  sidebar:
+    background: $gray30
+    logo: "theme/images/NOAA_FISHERIES_logoV.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: house
+        href: https://noaa.gov
+        text: NOAA Home
+      - icon: globe
+        href: https://www.fisheries.noaa.gov/about/northeast-fisheries-science-center
+        text: "NOAA Northeast Fisheries Science Center"
+      - icon: github
+        href: https://github.com/NEFSC
+        text: "NEFSC GitHub"
+
+    style: "docked"
+    search: true
+    collapse-level: 2
+    contents:
+      - text: "Home"
+        file: index.qmd
+      - auto: "*.qmd"
+
+format:
+  html:
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+
+filters:
+  - theme/include-files.lua
+  - quarto

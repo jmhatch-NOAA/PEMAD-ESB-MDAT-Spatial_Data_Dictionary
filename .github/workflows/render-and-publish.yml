@@ -1,0 +1,64 @@
+name: Render and deploy quarto files
+
+on:
+  repository_dispatch:
+    types: [trigger-rebuild]
+  push:
+
+jobs:
+  build-book:
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: r-lib/actions/setup-pandoc@v2
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Create and populate .Renviron file
+        run: |
+          echo ARCGIS_CLIENT="$MAPPED_ARCGIS_CLIENT" >> ~/.Renviron
+          echo ARCGIS_SECRET="$MAPPED_ARCGIS_SECRET" >> ~/.Renviron
+        shell: bash
+        env:
+          MAPPED_ARCGIS_CLIENT: ${{ secrets.ARCGIS_CLIENT }}
+          MAPPED_ARCGIS_SECRET: ${{ secrets.ARCGIS_SECRET }}
+
+      - name: Install R pkg linux dependencies
+        run: |
+          sudo apt update
+          sudo apt-get install libcurl4-openssl-dev libnetcdf-dev libudunits2-dev libgdal-dev libharfbuzz-dev libfribidi-dev
+        shell: bash
+
+      - name: Install arcgis dependencies
+        run: |
+          install.packages(c("cli", "dbplyr", "DT", "here", "httr2", "RcppSimdJson", "rlang", "rvest", "sf"))
+        shell: Rscript {0}
+
+        # install.packages("arcgis", repos = c("https://r-arcgis.r-universe.dev", "https://cloud.r-project.org"))
+      - name: Install arcgis
+        run: |
+          install.packages(c("arcgisutils", "arcgislayers"))
+        shell: Rscript {0}
+
+      - name: Install bookdown
+        run: |
+          install.packages(c("bookdown", "downlit", "xml2", "leaflet", "purrr", "knitr", "stringr"))
+        shell: Rscript {0}
+
+    - name: Set up Quarto
+      uses: quarto-dev/quarto-actions/setup@v2
+      with:
+        # To install LaTeX to build PDF book 
+        tinytex: true 
+        # uncomment below and fill to pin a version
+        # version: 0.9.600
+
+    - name: Publish to GitHub Pages (and render)
+      uses: quarto-dev/quarto-actions/publish@v2
+      with:
+        target: gh-pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions

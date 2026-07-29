@@ -1,0 +1,28 @@
+---
+title: "NEFSC MDAT_SPATIAL Data Dictionary"
+page-layout: full
+---
+
+:::{.callout-important title="Disclaimer"}
+This software is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA software and project code is provided on an "as is" basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this software will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.
+:::
+
+# Introduction
+
+The Marine Development & Advanced Technology database (MDAT_SPATIAL) serves as a centralized repository for spatial data to better understand the interactions between marine development and NOAA Fisheries trust resources (and the scientific surveys that monitor those resources). These resources play a vital role in supporting marine ecosystem health, fisheries productivity, and the conservation of protected species.
+
+The development of this database was partially funded by the Federal Permitting Improvement Steering Council (FPISC) and reflects a "shared database, shared schema" approach to data management, which promotes data sharing across scientific and regulatory initiatives.
+
+This data dictionary is meant to catalog and communicate the structure and content of the MDAT_SPATIAL, and provide meaningful descriptions of the data objects for users.
+
+<iframe src="https://jmhatch-noaa.github.io/PEMAD-MDEB-SMit_Overlap/" width="100%" height="500px" style="border:none;"></iframe>
+
+## GIS Data Pipeline
+
+TBD
+
+## NOAA Geoplatform
+
+[Requirements for Public Content](https://docs.google.com/document/d/1MkWFyFY0Ptij6bPfC6T9kyAFupXiYEigF84klpqG76c/edit?tab=t.0#heading=h.q73ivxplnx2) 
+
+[Publishing Data to the NOAA GeoPlatform](https://docs.google.com/document/d/1PLguB_zwiwheDyROco_fL-L5VHHmar5niE_yq86mN9M/edit?tab=t.0#heading=h.g7n4bqsp97bi)
