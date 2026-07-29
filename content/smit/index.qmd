@@ -4,3 +4,9 @@ order: 1
 ---
 
 Supporting scientific survey planning and requirements to mitigate impacts to NOAA Fisheries scientific surveys.
+
+::: {#fig-map-smit-overlap-map}
+<iframe src="https://jmhatch-noaa.github.io/PEMAD-MDEB-SMit_Overlap/" width="100%" height="500px" style="border:none;"></iframe>
+
+Map depicting the overlap between NEFSC scientific survey footprints and marine development areas (including operational, under-construction offshore wind leases [blue] and proposed areas [red]).
+:::

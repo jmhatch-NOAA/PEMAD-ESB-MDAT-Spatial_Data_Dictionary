@@ -15,8 +15,6 @@ The development of this database was partially funded by the Federal Permitting 
 
 This data dictionary is meant to catalog and communicate the structure and content of the MDAT_SPATIAL, and provide meaningful descriptions of the data objects for users.
 
-<iframe src="https://jmhatch-noaa.github.io/PEMAD-MDEB-SMit_Overlap/" width="100%" height="500px" style="border:none;"></iframe>
-
 ## GIS Data Pipeline
 
 TBD
