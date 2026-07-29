@@ -6,7 +6,7 @@ on:
   push:
 
 jobs:
-  build-book:
+  quarto-render-and-deploy:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     runs-on: ubuntu-latest
