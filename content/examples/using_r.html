@@ -187,8 +187,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <img src="../../theme/images/NOAA_FISHERIES_logoV.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
-    <a href="https://noaa.gov" title="NOAA Home" class="quarto-navigation-tool px-1" aria-label="NOAA Home"><i class="bi bi-house"></i></a>
-    <a href="https://www.fisheries.noaa.gov/about/northeast-fisheries-science-center" title="NOAA Northeast Fisheries Science Center" class="quarto-navigation-tool px-1" aria-label="NOAA Northeast Fisheries Science Center"><i class="bi bi-globe"></i></a>
+    <a href="https://www.fisheries.noaa.gov/about/northeast-fisheries-science-center" title="NOAA Home" class="quarto-navigation-tool px-1" aria-label="NOAA Home"><i class="bi bi-house"></i></a>
+    <a href="https://noaa.gov" title="NOAA Northeast Fisheries Science Center" class="quarto-navigation-tool px-1" aria-label="NOAA Northeast Fisheries Science Center"><i class="bi bi-globe"></i></a>
     <a href="https://github.com/NEFSC" title="NEFSC GitHub" class="quarto-navigation-tool px-1" aria-label="NEFSC GitHub"><i class="bi bi-github"></i></a>
 </div>
       </div>
@@ -405,10 +405,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>arcgisgeocode</li>
 <li>arcgisplaces</li>
 </ul>
-<p><br>The rest of this tutorial will show you how to 1) find a feature layer url on the <a href="https://mdeb-nefsc-noaa.hub.arcgis.com/">MDEB GIS Data Hub</a> and 2) read in the data from that feature layer.</p>
+<p><br>The rest of this tutorial will show you how to 1) find a feature layer url on the <a href="https://mdeb-nefsc-noaa.hub.arcgis.com/">MDAT GIS Data Hub</a> and 2) read in the data from that feature layer.</p>
 <section id="find-a-feature-layer-url" class="level2">
 <h2 class="anchored" data-anchor-id="find-a-feature-layer-url">Find a feature layer url</h2>
-<p>Navigate to the <a href="https://mdeb-nefsc-noaa.hub.arcgis.com/">MDEB GIS Data Hub</a>.</p>
+<p>Navigate to the <a href="https://mdeb-nefsc-noaa.hub.arcgis.com/">MDAT GIS Data Hub</a>.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -458,7 +458,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="read-in-data-from-a-feature-layer">Read in data from a feature layer</h2>
 <p>Now we will use the <code>arc_read()</code> function to extract the data from the EcoMon Strata feature layer and store the results in an R object called <code>ecomon_strata</code>.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Download EcoMon Survey strata from the MDEB GIS Data Hub</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Download EcoMon Survey strata from the MDAT GIS Data Hub</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>ecomon_strata <span class="ot">&lt;-</span> <span class="fu">arc_read</span>(<span class="at">url =</span> ecomon_url)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>ecomon_strata</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>

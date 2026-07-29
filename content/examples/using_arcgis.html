@@ -151,8 +151,8 @@ ul.task-list li input[type="checkbox"] {
       <img src="../../theme/images/NOAA_FISHERIES_logoV.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
-    <a href="https://noaa.gov" title="NOAA Home" class="quarto-navigation-tool px-1" aria-label="NOAA Home"><i class="bi bi-house"></i></a>
-    <a href="https://www.fisheries.noaa.gov/about/northeast-fisheries-science-center" title="NOAA Northeast Fisheries Science Center" class="quarto-navigation-tool px-1" aria-label="NOAA Northeast Fisheries Science Center"><i class="bi bi-globe"></i></a>
+    <a href="https://www.fisheries.noaa.gov/about/northeast-fisheries-science-center" title="NOAA Home" class="quarto-navigation-tool px-1" aria-label="NOAA Home"><i class="bi bi-house"></i></a>
+    <a href="https://noaa.gov" title="NOAA Northeast Fisheries Science Center" class="quarto-navigation-tool px-1" aria-label="NOAA Northeast Fisheries Science Center"><i class="bi bi-globe"></i></a>
     <a href="https://github.com/NEFSC" title="NEFSC GitHub" class="quarto-navigation-tool px-1" aria-label="NEFSC GitHub"><i class="bi bi-github"></i></a>
 </div>
       </div>
@@ -326,11 +326,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#connecting-arcgis-pro-and-agol" id="toc-connecting-arcgis-pro-and-agol" class="nav-link active" data-scroll-target="#connecting-arcgis-pro-and-agol">Connecting ArcGIS Pro and AGOL</a>
-  <ul class="collapse">
-  <li><a href="#add-data-to-favorites" id="toc-add-data-to-favorites" class="nav-link" data-scroll-target="#add-data-to-favorites">Add data to favorites</a></li>
+  <li><a href="#add-data-to-favorites" id="toc-add-data-to-favorites" class="nav-link active" data-scroll-target="#add-data-to-favorites">Add data to favorites</a></li>
   <li><a href="#connect-to-an-arcgis-server-using-a-rest-url" id="toc-connect-to-an-arcgis-server-using-a-rest-url" class="nav-link" data-scroll-target="#connect-to-an-arcgis-server-using-a-rest-url">Connect to an ArcGIS Server using a REST URL</a></li>
-  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jmhatch-NOAA/PEMAD-ESB-MDAT-Data_Dictionary/blob/docs/content/examples/using_arcgis.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/jmhatch-NOAA/PEMAD-ESB-MDAT-Data_Dictionary/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -356,12 +353,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="connecting-arcgis-pro-and-agol" class="level1">
-<h1>Connecting ArcGIS Pro and AGOL</h1>
 <p>To access and use data from ArcGIS Online (AGOL) in ArcGIS Pro, you can 1) add data to your favorites or 2) connect to an ArcGIS Server using a REST URL.</p>
 <section id="add-data-to-favorites" class="level2">
 <h2 class="anchored" data-anchor-id="add-data-to-favorites">Add data to favorites</h2>
-<p>To add data to your favorites, navigate to the <a href="https://mdeb-nefsc-noaa.hub.arcgis.com/">MDEB GIS Data Hub</a> and find your desired feature service using either the <a href="https://mdeb-nefsc-noaa.hub.arcgis.com/search">Content library</a> or the Content gallery. We will use the Content gallery in this example. You must be signed in to ArcGIS Online to add content to your favorites. Click <code>Sign In</code> in the top-right corner of the MDEB GIS Data Hub to log in to your AGOL account. Follow prompts to log in.</p>
+<p>To add data to your favorites, navigate to the <a href="https://mdeb-nefsc-noaa.hub.arcgis.com/">MDAT GIS Data Hub</a> and find your desired feature service using either the <a href="https://mdeb-nefsc-noaa.hub.arcgis.com/search">Content library</a> or the Content gallery. We will use the Content gallery in this example. You must be signed in to ArcGIS Online to add content to your favorites. Click <code>Sign In</code> in the top-right corner of the MDAT GIS Data Hub to log in to your AGOL account. Follow prompts to log in.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -404,7 +399,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="connect-to-an-arcgis-server-using-a-rest-url" class="level2">
 <h2 class="anchored" data-anchor-id="connect-to-an-arcgis-server-using-a-rest-url">Connect to an ArcGIS Server using a REST URL</h2>
-<p>To add data to ArcGIS Pro via REST URL, first obtain the REST URL for the desired feature service from ArcGIS Online. You can obtain the REST URL from the <a href="https://mdeb-nefsc-noaa.hub.arcgis.com/">MDEB GIS Data Hub</a> using either the <a href="https://mdeb-nefsc-noaa.hub.arcgis.com/search">Content library</a> or the Content gallery. We will use the Content gallery in this example. First, scroll through the gallery and find the feature service that you are interested in. Click on <code>View item details</code> to be taken to the feature service landing page.</p>
+<p>To add data to ArcGIS Pro via REST URL, first obtain the REST URL for the desired feature service from ArcGIS Online. You can obtain the REST URL from the <a href="https://mdeb-nefsc-noaa.hub.arcgis.com/">MDAT GIS Data Hub</a> using either the <a href="https://mdeb-nefsc-noaa.hub.arcgis.com/search">Content library</a> or the Content gallery. We will use the Content gallery in this example. First, scroll through the gallery and find the feature service that you are interested in. Click on <code>View item details</code> to be taken to the feature service landing page.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -446,7 +441,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
