@@ -5,12 +5,12 @@ order: 16
 
 ### Naming convention for spatial tables in oracle database
 
-NEFSC scientific survey strata are compiled in the oracle database under the MDEB_SPATIAL schema. All spatial tables are projected in North American Datum of 1983 (NAD 83). NEFSC scientific survey strata naming conventions are as follows:
+NEFSC scientific survey strata are compiled in the oracle database under the MDAT_SPATIAL schema. All spatial tables are projected in North American Datum of 1983 (NAD 83). NEFSC scientific survey strata naming conventions are as follows:
 
 |       *SCHEMA.PROJECTABBR_SURVEYCODE_STRATA*
 | 
 | For example, the Bottom Trawl Survey strata:
-|       *MDEB_SPATIAL.SMIT_BTS_STRATA*
+|       *MDAT_SPATIAL.SMIT_BTS_STRATA*
 | 
 | Surveys with associated substrata are named as follows:
 |       *SCHEMA.SMIT_SURVEYCODE_SUBSTRATA*
