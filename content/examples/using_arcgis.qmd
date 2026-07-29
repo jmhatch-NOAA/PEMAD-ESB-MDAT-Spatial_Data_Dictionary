@@ -3,13 +3,11 @@ title: "Connecting ArcGIS Pro and AGOL"
 order: 3
 ---
 
-# Connecting ArcGIS Pro and AGOL
-
 To access and use data from ArcGIS Online (AGOL) in ArcGIS Pro, you can 1) add data to your favorites or 2) connect to an ArcGIS Server using a REST URL.
 
 ## Add data to favorites
 
-To add data to your favorites, navigate to the [MDEB GIS Data Hub](https://mdeb-nefsc-noaa.hub.arcgis.com/) and find your desired feature service using either the [Content library](https://mdeb-nefsc-noaa.hub.arcgis.com/search) or the Content gallery. We will use the Content gallery in this example. You must be signed in to ArcGIS Online to add content to your favorites. Click `Sign In` in the top-right corner of the MDEB GIS Data Hub to log in to your AGOL account. Follow prompts to log in.
+To add data to your favorites, navigate to the [MDAT GIS Data Hub](https://mdeb-nefsc-noaa.hub.arcgis.com/) and find your desired feature service using either the [Content library](https://mdeb-nefsc-noaa.hub.arcgis.com/search) or the Content gallery. We will use the Content gallery in this example. You must be signed in to ArcGIS Online to add content to your favorites. Click `Sign In` in the top-right corner of the MDAT GIS Data Hub to log in to your AGOL account. Follow prompts to log in.
 
 ```{r}
 #| echo: false
@@ -43,7 +41,7 @@ knitr::include_graphics("image/arcgispro_portal_favorites.png")
 
 ## Connect to an ArcGIS Server using a REST URL
 
-To add data to ArcGIS Pro via REST URL, first obtain the REST URL for the desired feature service from ArcGIS Online. You can obtain the REST URL from the [MDEB GIS Data Hub](https://mdeb-nefsc-noaa.hub.arcgis.com/) using either the [Content library](https://mdeb-nefsc-noaa.hub.arcgis.com/search) or the Content gallery. We will use the Content gallery in this example. First, scroll through the gallery and find the feature service that you are interested in. Click on `View item details` to be taken to the feature service landing page.
+To add data to ArcGIS Pro via REST URL, first obtain the REST URL for the desired feature service from ArcGIS Online. You can obtain the REST URL from the [MDAT GIS Data Hub](https://mdeb-nefsc-noaa.hub.arcgis.com/) using either the [Content library](https://mdeb-nefsc-noaa.hub.arcgis.com/search) or the Content gallery. We will use the Content gallery in this example. First, scroll through the gallery and find the feature service that you are interested in. Click on `View item details` to be taken to the feature service landing page.
 
 ```{r}
 #| echo: false

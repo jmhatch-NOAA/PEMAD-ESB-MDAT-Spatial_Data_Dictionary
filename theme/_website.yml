@@ -27,10 +27,10 @@ website:
     align: center
     tools:
       - icon: house
-        href: https://noaa.gov
+        href: https://www.fisheries.noaa.gov/about/northeast-fisheries-science-center
         text: NOAA Home
       - icon: globe
-        href: https://www.fisheries.noaa.gov/about/northeast-fisheries-science-center
+        href: https://noaa.gov
         text: "NOAA Northeast Fisheries Science Center"
       - icon: github
         href: https://github.com/NEFSC
