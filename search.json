@@ -1,0 +1,395 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "NEFSC MDAT_SPATIAL Data Dictionary",
+    "section": "",
+    "text": "ImportantDisclaimer\n\n\n\nThis software is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA software and project code is provided on an “as is” basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this software will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#gis-data-pipeline",
+    "href": "index.html#gis-data-pipeline",
+    "title": "NEFSC MDAT_SPATIAL Data Dictionary",
+    "section": "GIS Data Pipeline",
+    "text": "GIS Data Pipeline\nTBD",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#noaa-geoplatform",
+    "href": "index.html#noaa-geoplatform",
+    "title": "NEFSC MDAT_SPATIAL Data Dictionary",
+    "section": "NOAA Geoplatform",
+    "text": "NOAA Geoplatform\nRequirements for Public Content\nPublishing Data to the NOAA GeoPlatform",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "content/smit/smit_sop.html",
+    "href": "content/smit/smit_sop.html",
+    "title": "Standard Operating Procedure",
+    "section": "",
+    "text": "Naming convention for spatial tables in oracle database\nNEFSC scientific survey strata are compiled in the oracle database under the MDEB_SPATIAL schema. All spatial tables are projected in North American Datum of 1983 (NAD 83). NEFSC scientific survey strata naming conventions are as follows:\n      SCHEMA.PROJECTABBR_SURVEYCODE_STRATA\n\nFor example, the Bottom Trawl Survey strata:\n      MDEB_SPATIAL.SMIT_BTS_STRATA\n\nSurveys with associated substrata are named as follows:\n      SCHEMA.SMIT_SURVEYCODE_SUBSTRATA\n\nSurveys with associated historical strata are named as follows:\n      SCHEMA.SMIT_SURVEYCODE_STRATA_HISTORIC\n\nSurveys with an associated point layer (ex. sample stations) are named as follows:\n      SCHEMA.SMIT_SURVEYCODE_STATIONS\n\nSurveys with an associated line layer (ex. surveylines) are named as follows:\n      SCHEMA.SMIT_SURVEYCODE_LINES\n\nThere are three tables containing metadata for the associated survey strata. They are named as follows:\nSCHEMA.SMIT_META_FEATURES contains information about survey strata feature services.\nSCHEMA.SMIT_META_FIELDS contains information about fields, including aliases and fields descriptions.\nSCHEMA.SMIT_META_LAYERS contains information about layers within feature services.\n\n\nTable 1. NEFSC Scientific Survey names and survey codes\n\n\n\n\n\n\n\nSurvey code\nSurvey name\n\n\n\n\nBTS\nBottom Trawl Survey\n\n\nCOASTSPAN\nCooperative Atlantic States Shark Pupping and Nursery Survey\n\n\nCSBLL\nCoastal Shark Bottom Longline Survey\n\n\nECOMON\nEcosystem Monitoring Survey\n\n\nEDNA\neDNA Survey\n\n\nGOMBLL\nGulf of Maine Bottom Longline Survey\n\n\nHL\nHook and Line Survey\n\n\nMMST\nMarine Mammal and Sea Turtle Survey\n\n\nNARW\nNorth Atlantic Right Whale Aerial Survey\n\n\nOQ\nOcean Quahog Survey\n\n\nSC\nAtlantic Surfclam Survey\n\n\nSCALLOP\nSea Scallop Survey\n\n\nSEAL\nSeal Aerial Survey\n\n\nSHRIMP\nNorthern Shrimp Survey\n\n\nTURTLE\nTurtle Ecology Survey",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation",
+      "Standard Operating Procedure"
+    ]
+  },
+  {
+    "objectID": "content/smit/seal.html",
+    "href": "content/smit/seal.html",
+    "title": "Seal Aerial Survey",
+    "section": "",
+    "text": "ArcGIS Feature Service\nClick here.\n\n\nInPort Metadata\nYes, see here.\n\n\nDescription\nThe NEFSC has been conducting aerial surveys of gray seal pupping colonies since 2000 to monitor the number of pups born in U.S. waters. Surveys are flown from either a Cessna 252, Cessna Skymaster, or NOAA Twin Otter at altitudes ranging from 180-230 meters, using hand-held or belly-mounted Canon camera systems. Surveys may also be conducted with Uncrewed Aircraft Systems (UAS) at select colonies. Ideally, surveys are flown after all pups are born and before they start leaving the colony, but in some years surveys may have been flown before or after this optimal window. Furthermore, not all colonies may have been surveyed each year due to logistics or if the site was not yet an established pupping colony. The Northeast Fisheries Science Center has been conducting aerial surveys of harbor seals since 1981 to monitor the abundance of the population in U.S. waters. Surveys are flown during the pupping season when animals are concentrated on the coast of Maine and timed to coincide with peak pupping estimated to be around the end of May. Surveys are flown from a NOAA Twin Otter at 230 meters within 2 hours of low tide using a hand-held Canon camera and fixed 300mm lens. Close to 1,000 ledges are surveyed and grouped into bay units for analysis. For more information, see NEFSC Protected Species Division Pinniped Research.\n\n\nSpatial Extent\n\n\n\n\n\n\n\n\nLayers\n\n\n\n\n\nid\nname\ntype\ngeometryType\n\n\n\n\n0\nSMIT_SEAL_STATIONS\nFeature Layer\nesriGeometryPoint\n\n\n\n\n\n\n\nFields\n\nSMIT_SEAL_STATIONS\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\nPOINTNUM\nPoint number\nUnique point number\nesriFieldTypeDouble\n\n\nBAYNUM\nBay number\nUnique bay number\nesriFieldTypeBigInteger\n\n\nPOINTNAME\nPoint name\nName of surveyed point\nesriFieldTypeString\n\n\nLAT\nLatitude\nStation latitude in decimal degrees\nesriFieldTypeDouble\n\n\nLON\nLongitude\nStation longitude in decimal degrees\nesriFieldTypeDouble\n\n\nHG\nHg (Grey Seal)\nY/N (yes/no) whether Grey Seal was observed at site\nesriFieldTypeString\n\n\nPV\nPv (Harbor Seal)\nY/N (yes/no) whether Harbor Seal was observed at site\nesriFieldTypeString\n\n\nHGPUPSURVEYSITE\nHg pup survey site\nY/N (yes/no) whether site is Grey Seal pupping site\nesriFieldTypeString\n\n\nPVPUPSURVEYSITE\nPv pup survey site\nY/N (yes/no) whether site is Harbor Seal pupping site\nesriFieldTypeString\n\n\nSPECIES\nSpecies\nSeal species\nesriFieldTypeString\n\n\nSURVEY_TYPE\nSurvey type\nType of survey (pupping or non-pupping survey)\nesriFieldTypeString",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation",
+      "Seal Aerial Survey"
+    ]
+  },
+  {
+    "objectID": "content/smit/pam.html",
+    "href": "content/smit/pam.html",
+    "title": "Passive Acoustic Monitoring Survey",
+    "section": "",
+    "text": "ArcGIS Feature Service\nClick here.\n\n\nInPort Metadata\nYes, see here.\n\n\nDescription\nThis dataset provides information on the locations and deployment details of Passive Acoustic Monitoring (PAM) devices associated with NOAA Fisheries, NEFSC and its partner projects. The data were sourced from the Regional Wildlife Science Collaborative (RWSC) Research Planning Map and were provided in part by the Marine Mammal Subcommittee.\n\n\nSpatial Extent\n\n\n\n\n\n\n\n\nLayers\n\n\n\n\n\nid\nname\ntype\ngeometryType\n\n\n\n\n0\nSMIT_PAM_DEPLOYMENTS\nFeature Layer\nesriGeometryPoint\n\n\n\n\n\n\n\nFields\n\nSMIT_PAM_DEPLOYMENTS\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\noid\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nsurvey_name\nSURVEY NAME\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\npoc_email\nPOC EMAIL\nEmail for the primary point of contact\nesriFieldTypeString\n\n\nproject_name\nPROJECT NAME\nName of the project\nesriFieldTypeString\n\n\nsite\nSITE\nThe site or station ID. For example, a line of three recorders off Cape Hatteras could have the following individual site IDs: H1, H2, and H3.\nesriFieldTypeString\n\n\nlatitude\nLATITUDE\nLatitude of recorder, in decimal degrees (DD). NAD83, 1986 (as per BOEM guidelines).\nesriFieldTypeDouble\n\n\nlongitude\nLONGITUDE\nLongitude of recorder, in decimal degrees (DD). NAD83, 1986 (as per BOEM guidelines).\nesriFieldTypeDouble\n\n\ninstrument\nINSTRUMENT\nRecording instrument type if available, please select one from the following list (or let us know if there’s a type that should be added): SoundTrap, DASAR, Omnidirectional, AMAR, MARU, HARP, HTI, APC, RT Moored Surface Buoy, Rockhopper, Array, Sentinel, Lander, VR2, VR2AR\nesriFieldTypeString\n\n\nco_deployment\nCO DEPLOYMENT\nAre there any other acoustic receivers co-deployed with the instrument? For example, VEMCO, acoustic telemetry or active acoustics. Select YES or NO.\nesriFieldTypeString\n\n\nother_instruments\nOTHER INSTRUMENTS\nCo-deployment instrument types if available, please list as semicolon separated items\nesriFieldTypeString\n\n\nstatus\nSTATUS\nCurrent status of the deployment as of submission date. Please select from the following list: Retrieved, Deployed, Proposed\nesriFieldTypeString\n\n\ndeploy_start_date\nDEPLOY START DATE\nThe start date in the MM/DD/YYYY format for the start of usable data for that deployment (i.e. the recorder is on and in the water).\nesriFieldTypeDate\n\n\ndeploy_end_date\nDEPLOY_END_DATE\nThe end date in the MM/DD/YYYY format for the end of usable data for that deployment (i.e. the recorder is off or out of the water).\nesriFieldTypeDate\n\n\ndeploy_end_date_map\nDEPLOY END DATE\nThe end date in the MM/DD/YYYY format for the end of usable data for that deployment formatted for time slider capabilities in the map.\nesriFieldTypeDate\n\n\ndata_repository\nDATA REPOSITORY\nWill the data be sent out to a repository, and if so which one? Please list. (Example options: BOEM, NOAA-NCEI, Dryad)\nesriFieldTypeString\n\n\nproject_in_database\nPROJECT_IN_DATABASE\nIs the project listed in the RWSC database? Select YES or NO. Please find the database here: https://database.rwsc.org If you need to add the project to the database you can do so using the “Submit new project” button. The purpose of this is so that we can link to the project entry as an attribute for users to easily find project details.\nesriFieldTypeString\n\n\ndate_submitted\nDATE SUBMITTED\nThe date the entries were filled in and sent back to RWSC\nesriFieldTypeDate\n\n\nproject_link\nPROJECT LINK\nURL address to the project in the RWSC Database\nesriFieldTypeString\n\n\ndate_added\nDATE ADDED\nDate Added to the RWSC database\nesriFieldTypeDate\n\n\nlabel\nLABEL\nLabel used for map symbology\nesriFieldTypeString\n\n\ncomments\nCOMMENTS\nAny additional comments submitters would like to share\nesriFieldTypeString\n\n\nshape\nshape\nNA\nesriFieldTypeGeometry\n\n\nsurface_expression\nsurface_expression\nIs there a buoy or other surface marker attached to the device? Select YES or NO.\nesriFieldTypeString\n\n\nrpt.rpt.PAM_Deployments.entity\nrpt.rpt.PAM_Deployments.entity\nNA\nesriFieldTypeString",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation",
+      "Passive Acoustic Monitoring Survey"
+    ]
+  },
+  {
+    "objectID": "content/smit/mmst.html",
+    "href": "content/smit/mmst.html",
+    "title": "Marine Mammal and Sea Turtle Survey",
+    "section": "",
+    "text": "ArcGIS Feature Service\nClick here.\n\n\nInPort Metadata\nYes, see here.\n\n\nDescription\nThe Marine Mammal and Sea Turtle Survey, conducted by the Conservation Ecology Branch at the Northeast Fisheries Science Center, develops abundance and distribution models that incorporate environmental factors to better understand how protected species such as whales, dolphins, and sea turtles use our waters. The program coordinates the data collection and analysis efforts of NOAA Fisheries Northeast and Southeast Science Centers and the U.S. Fish and Wildlife Service Division of Migratory Birds. Through these efforts, we are providing enhanced data to managers and supporting conservation initiatives. For more information, see NEFSC Marine Mammal and Sea Turtle Program.\n\n\nSpatial Extent\n\n\n\n\n\n\n\n\nLayers\n\n\n\n\n\nid\nname\ntype\ngeometryType\n\n\n\n\n0\nSMIT_MMST_STRATA\nFeature Layer\nesriGeometryPolygon\n\n\n\n\n\n\n\nFields\n\nSMIT_MMST_STRATA\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\nTYPE\nSurvey type\nSurvey type (shipboard or aerial, US northeast or southeast coast)\nesriFieldTypeString",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation",
+      "Marine Mammal and Sea Turtle Survey"
+    ]
+  },
+  {
+    "objectID": "content/smit/hook_line.html",
+    "href": "content/smit/hook_line.html",
+    "title": "Hook and Line Survey",
+    "section": "",
+    "text": "ArcGIS Feature Service\nClick here.\n\n\nInPort Metadata\nYes, see here.\n\n\nDescription\nThe Hook and Line Survey will collect species-specific aggregate weight and abundance, as well as individual lengths and biological characteristics (e.g., age, maturity, genetics, diet, energetics). Tagging will also be conducted opportunistically and by request. In addition to deploying hook and line gear, the survey will deploy a benthic stereo camera system to collect additional information on fish density, abundance, and demographics. A suite of environmental data will be collected via conductivity, temperature, and depth (CTD) deployments at each survey station. Habitat data will be collected using seafloor imaging (still or video) techniques. Finally, operational and gear deployment data will be collected for every gear set. The Hook and Line Survey is a new survey, so all data uses are prospective. Once the survey is mature, the data will be used in stock assessments for a variety of commercially and recreationally important species and for analyses that support management actions. This will encompass species covered by the Mid-Atlantic Fishery Management Council (MAFMC), New England Fishery Management Council (NEFMC), and Atlantic States Marine Fisheries Commission (ASMFC), including but not limited to Atlantic cod (Gadus morhua), haddock (Melanogrammus aeglefinus), pollock (Pollachius pollachius), white hake (Urophycis tenuis), red hake (Urophycis chuss), summer flounder (Paralichthys dentatus), scup (Stenotomus chrysops), black sea bass (Centropristis striata), bluefish (Pomatomus saltatrix), spiny dogfish (Pomatomus saltatrix), Atlantic croaker (Micropogonias undulatus), and skates. At least 5 years of Hook and Line Survey data will be required before abundance indices from the survey are integrated into stock assessments, but habitat and biological data could be used immediately to supplement existing data streams. Beyond stock assessments and management, the data from the Hook and Line Survey will also be used in research to understand the cumulative impacts of offshore wind on resource species and their habitats. Note that the Hook and Line Survey is a new survey and is still in planning and review. The exact geographic extent and survey strata are still under review. The geographic extent displayed here is tentative.\n\n\nSpatial Extent\n\n\n\n\n\n\n\n\nLayers\n\n\n\n\n\nid\nname\ntype\ngeometryType\n\n\n\n\n0\nSMIT_HL_STRATA\nFeature Layer\nesriGeometryPolygon\n\n\n\n\n\n\n\nFields\n\nSMIT_HL_STRATA\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\nAREA\nArea (sq km)\nArea of strata in square kilometers\nesriFieldTypeDouble",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation",
+      "Hook and Line Survey"
+    ]
+  },
+  {
+    "objectID": "content/smit/edna.html",
+    "href": "content/smit/edna.html",
+    "title": "eDNA Survey",
+    "section": "",
+    "text": "ArcGIS Feature Service\nClick here.\n\n\nInPort Metadata\nYes, see here.\n\n\nDescription\nScientists at NOAA’s Northeast Fisheries Science Center (NEFSC) are using environmental DNA (eDNA) to identify fish communities and monitor ecosystems by collecting a water sample and analyzing the DNA found in it, identifying the species that left it behind without capturing a single animal. As animals swim, they shed scales, tissue, and waste, leaving traces of DNA in the water. A water sample is first collected from the ocean and filtered to concentrate DNA in it. NOAA scientists then make millions of copies of a target DNA region through polymerase chain reaction (PCR) to make enough genetic material for high throughput sequencing. The metabarcoding process described above for eDNA analysis allows scientists to look for many species in the same sample. The final step is like a matching game, in which the DNA sequences are compared with a reference library of known species to find a match. The eDNA method is particularly useful for detecting species that are not easily captured, including rare or migratory species. It can also help in areas that are difficult to sample because of challenging ocean conditions, sensitive habitats, or a rugged seafloor. An eDNA analysis provides a snapshot of the community of species at the time of sampling and over time. This can help us detect shifts in marine ecosystems. eDNA samples have been collected on NOAA Ecosystem Monitoring (EcoMon) surveys since 2019. These samples will help develop best eDNA practices using metabarcoding, an innovative way to determine what fish species live in what parts of the ocean without actually seeing any fish.\n\n\nSpatial Extent\n\n\n\n\n\n\n\n\nLayers\n\n\n\n\n\nid\nname\ntype\ngeometryType\n\n\n\n\n0\nSMIT_EDNA_STATIONS\nFeature Layer\nesriGeometryPoint\n\n\n1\nSMIT_EDNA_STRATA\nFeature Layer\nesriGeometryPolygon\n\n\n\n\n\n\n\nFields\n\nSMIT_EDNA_STATIONS\nDescriptionSampling stations for the eDNA Survey.\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\nEM_SEQ\nEm sequence\nEm sequence number\nesriFieldTypeDouble\n\n\nFIXED_SEQ\nFixed sequence\nFixed sequence number\nesriFieldTypeDouble\n\n\nNAME\nName\nUnique strata/station ID\nesriFieldTypeString\n\n\nREGION\nStrata region\nStrata groupings (MAB = Mid-Atlantic Bight, SNE = Southern New England, GB = Georges Bank, GOM = Gulf of Maine)\nesriFieldTypeString\n\n\nSTRATA\nStrata\nUnique strata ID number\nesriFieldTypeDouble\n\n\nDEPLOYMENT\nDeployment\nEquipment deployment type\nesriFieldTypeString\n\n\nBONGO_PROTOCOL\nBongo protocol\nBongo protocol\nesriFieldTypeString\n\n\nDEPTH\nDepth (m)\nStation depth in meters\nesriFieldTypeDouble\n\n\nLAT\nLatitude\nLatitude of survey station in decimal degrees\nesriFieldTypeDouble\n\n\nLON\nLongitude\nLongitude of survey station in decimal degrees\nesriFieldTypeDouble\n\n\n\n\n\nSMIT_EDNA_STRATA\nDescriptionScientific survey strata for the eDNA Survey.\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\nSTR_NAME\nStrata name\nName of the strata numeric from 1 to 47, except for one stratum that is split into two polygons. Strata 38 is split and the name was changed to distinguish the east and west polygons.\nesriFieldTypeDouble\n\n\nNUMOFPOLY\nNumber of polygons\nNumber of polygons that make up the strata (1 or 2)\nesriFieldTypeDouble\n\n\nNUMOFSTA\nNumber of stations\nNumber of plankton stations sampled in the strata for current ECOMON/ eDNA program\nesriFieldTypeDouble\n\n\nREGION\nStrata region\nStrata groupings (MAB = Mid-Atlantic Bight, SNE = Southern New England, GB = Georges Bank, GOM = Gulf of Maine)\nesriFieldTypeString\n\n\nTYPE\nType\nStrata description (C = coastal, IS = inner-shelf, MS = mid-shelf, SB = shelf break, Bank = bank, Off = off-shelf, Basin = deep basin)\nesriFieldTypeString\n\n\nACRES\nArea (acres)\nArea of strata in acres\nesriFieldTypeDouble",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation",
+      "eDNA Survey"
+    ]
+  },
+  {
+    "objectID": "content/smit/csbll.html",
+    "href": "content/smit/csbll.html",
+    "title": "Coastal Shark Bottom Longline Survey",
+    "section": "",
+    "text": "ArcGIS Feature Service\nClick here.\n\n\nInPort Metadata\nYes, see here.\n\n\nDescription\nSince 1986, members of the NEFSC Apex Predators Program have conducted thirteen Coastal Shark Bottom Longline Surveys along the US Atlantic coast in April and May of each survey year. The initial survey was conducted in 1986 between Tampa Bay, Florida and southern Rhode Island (Cruise DE II 89-03) in a fixed-station survey design covering 137 stations across three depth strata on the continental shelf. Since that survey, stations and survey range have been truncated due to time constraints and bottom conditions at some stations. The current survey track includes 95 stations and extends from southern Florida to Delaware. In 1996, the gear was updated to reflect that of the commercial large coastal shark fishery and soak times were increased to 3 hours to obtain a higher catch. Bait, gear, and fishing methods have remained the same since that time. Various vessels have been used to stage the survey, with the F/V Eagle Eye II used consistently since 2012. Station locations are fixed but the set direction for transects is dependent on prevailing wind and current directions. The biological studies of sharks conducted during the survey have remained the same since 1986.\n\n\nSpatial Extent\n\n\n\n\n\n\n\n\nLayers\n\n\n\n\n\nid\nname\ntype\ngeometryType\n\n\n\n\n0\nSMIT_CSBLL_STATIONS\nFeature Layer\nesriGeometryPoint\n\n\n1\nSMIT_CSBLL_STRATA\nFeature Layer\nesriGeometryPolygon\n\n\n\n\n\n\n\nFields\n\nSMIT_CSBLL_STATIONS\nDescriptionSampling stations for the Coastal Shark Bottom Longline Survey.\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\nSTATION\nStation\nStation ID number\nesriFieldTypeDouble\n\n\nLAT\nLatitude\nLatitude of survey station in decimal degrees\nesriFieldTypeDouble\n\n\nLON\nLongitude\nLongitude of survey station in decimal degrees\nesriFieldTypeDouble\n\n\n\n\n\nSMIT_CSBLL_STRATA\nDescriptionScientific survey strata for the Coastal Shark Bottom Longline Survey.\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation",
+      "Coastal Shark Bottom Longline Survey"
+    ]
+  },
+  {
+    "objectID": "content/smit/clam_quahog.html",
+    "href": "content/smit/clam_quahog.html",
+    "title": "Atlantic Surfclam and Ocean Quahog Survey",
+    "section": "",
+    "text": "ArcGIS Feature Service\nClick here.\n\n\nInPort Metadata\nYes, see here.\n\n\nDescription\nThe standardized NEFSC Atlantic Surfclam and Ocean Quahog Survey has covered an area from Cape Hatteras to Georges Bank. The survey was historically conducted every three years, with the entire area sampled for surfclams and quahogs each survey. Starting in 2019 through present, a six-year rotation was implemented to cover the entire region and both species for assessment purposes. Each year either the northern or southern region is surveyed, and focuses on surfclams or quahogs for assessment purposes (although data are collected for both species each year). The rotational schedule by year is: 1. surfclam south, 2. surfclam north, 3. surfclam south, 4. surfclam north, 5. quahog south, 6. quahog north. The dredge had been operated in a consistent fashion using the same survey protocols and gear from 1982 until 2011. In 2012, the platform was changed to an industry vessel, which resulted in a gear change from a 5’ hydraulic dredge to a 13’ commercial style hydraulic dredge following a calibration study. Five-minute tows are made at stations that are randomly selected to provide unbiased abundance measurements.\n\n\nSpatial Extent\n\n\n\n\n\n\n\n\nLayers\n\n\n\n\n\nid\nname\ntype\ngeometryType\n\n\n\n\n0\nSMIT_OQ_STRATA\nFeature Layer\nesriGeometryPolygon\n\n\n1\nSMIT_SC_STRATA\nFeature Layer\nesriGeometryPolygon\n\n\n\n\n\n\n\nFields\n\nSMIT_OQ_STRATA\nDescriptionScientific survey strata for the Ocean Quahog Survey.\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\nGROUP_1\nGroup_1\nStrata ID\nesriFieldTypeString\n\n\nARSQNM2\nArea (sq nm)\nStrata area in square nautical miles\nesriFieldTypeDouble\n\n\nARSQKM2\nArea (sq km)\nStrata area in square kilometers\nesriFieldTypeDouble\n\n\nMN_DPTH\nMinimum depth\nMinimum depth in stratum in meters\nesriFieldTypeDouble\n\n\nMIN_LAT\nMinimum latitude\nMinimum latitude in stratum\nesriFieldTypeDouble\n\n\nMIN_LON\nMinimum longitude\nMinimum longitude in stratum\nesriFieldTypeDouble\n\n\nMAXDPTH\nMaximum depth\nMaximum depth in stratum in meters\nesriFieldTypeDouble\n\n\nMAX_LAT\nMaximum latitude\nMaximum latitude in stratum\nesriFieldTypeDouble\n\n\nMAX_LON\nMaximum longitude\nMaximum longitude in stratum\nesriFieldTypeDouble\n\n\nAVGDPTH\nAverage depth\nAverage depth in stratum in meters\nesriFieldTypeDouble\n\n\nAVGLAT\nAverage latitude\nAverage latitude in stratum\nesriFieldTypeDouble\n\n\nAVGLON\nAverage longitude\nAverage longitude in stratum\nesriFieldTypeDouble\n\n\nMDN_DPT\nMedian depth\nMedian depth in stratum in meters\nesriFieldTypeDouble\n\n\nMEDN_LT\nMedian latitude\nMedian latitude in stratum\nesriFieldTypeDouble\n\n\nMEDN_LN\nMedian longitude\nMedian longitude in stratum\nesriFieldTypeDouble\n\n\n\n\n\nSMIT_SC_STRATA\nDescriptionScientific survey strata for the Atlantic Surfclam Survey.\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\nNAME\nName\nStrata name\nesriFieldTypeString\n\n\nACRES\nArea (acres)\nArea of strata in acres\nesriFieldTypeDouble",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation",
+      "Atlantic Surfclam and Ocean Quahog Survey"
+    ]
+  },
+  {
+    "objectID": "content/hub/index.html",
+    "href": "content/hub/index.html",
+    "title": "GIS Data Hub",
+    "section": "",
+    "text": "Watch these screen capture videos for assistance in navigating the Northeast Fisheries Science Center Marine Development GIS Data Hub.",
+    "crumbs": [
+      "Content",
+      "GIS Data Hub"
+    ]
+  },
+  {
+    "objectID": "content/hub/index.html#explore-by-category",
+    "href": "content/hub/index.html#explore-by-category",
+    "title": "GIS Data Hub",
+    "section": "Explore by Category",
+    "text": "Explore by Category\nExplore datasets and maps by category.\n\n\nYour browser does not support the video tag.",
+    "crumbs": [
+      "Content",
+      "GIS Data Hub"
+    ]
+  },
+  {
+    "objectID": "content/hub/index.html#view-all-datasets",
+    "href": "content/hub/index.html#view-all-datasets",
+    "title": "GIS Data Hub",
+    "section": "View all Datasets",
+    "text": "View all Datasets\nUse the gallery application to view all datasets, search datasets by name, open the dataset landing page, and view the dataset in ArcGIS Online Map Viewer.\n\n\nYour browser does not support the video tag.",
+    "crumbs": [
+      "Content",
+      "GIS Data Hub"
+    ]
+  },
+  {
+    "objectID": "content/hub/index.html#use-the-interactive-mapper",
+    "href": "content/hub/index.html#use-the-interactive-mapper",
+    "title": "GIS Data Hub",
+    "section": "Use the Interactive Mapper",
+    "text": "Use the Interactive Mapper\nUse the interactive mapping application to view NOAA NEFSC data alongside BOEM marine development data. Toggle data layers on and off, view the map legend, and click on the map for more information on map features.\n\n\nYour browser does not support the video tag.",
+    "crumbs": [
+      "Content",
+      "GIS Data Hub"
+    ]
+  },
+  {
+    "objectID": "content/hub/index.html#download-data",
+    "href": "content/hub/index.html#download-data",
+    "title": "GIS Data Hub",
+    "section": "Download Data",
+    "text": "Download Data\nDownload datasets from the Data Hub.\n\n\nYour browser does not support the video tag.",
+    "crumbs": [
+      "Content",
+      "GIS Data Hub"
+    ]
+  },
+  {
+    "objectID": "content/hub/index.html#filter-data",
+    "href": "content/hub/index.html#filter-data",
+    "title": "GIS Data Hub",
+    "section": "Filter Data",
+    "text": "Filter Data\nFilter data before downloading.\n\n\nYour browser does not support the video tag.",
+    "crumbs": [
+      "Content",
+      "GIS Data Hub"
+    ]
+  },
+  {
+    "objectID": "content/hub/index.html#view-metadata",
+    "href": "content/hub/index.html#view-metadata",
+    "title": "GIS Data Hub",
+    "section": "View Metadata",
+    "text": "View Metadata\nView metadata for datasets on the Data Hub.\n\n\nYour browser does not support the video tag.",
+    "crumbs": [
+      "Content",
+      "GIS Data Hub"
+    ]
+  },
+  {
+    "objectID": "content/hub/index.html#view-data-source",
+    "href": "content/hub/index.html#view-data-source",
+    "title": "GIS Data Hub",
+    "section": "View Data Source",
+    "text": "View Data Source\nView ArcGIS REST Services Directory for datasets.\n\n\nYour browser does not support the video tag.",
+    "crumbs": [
+      "Content",
+      "GIS Data Hub"
+    ]
+  },
+  {
+    "objectID": "content/examples/using_arcgis.html",
+    "href": "content/examples/using_arcgis.html",
+    "title": "Connecting ArcGIS Pro and AGOL",
+    "section": "",
+    "text": "To access and use data from ArcGIS Online (AGOL) in ArcGIS Pro, you can 1) add data to your favorites or 2) connect to an ArcGIS Server using a REST URL.\n\n\nTo add data to your favorites, navigate to the MDEB GIS Data Hub and find your desired feature service using either the Content library or the Content gallery. We will use the Content gallery in this example. You must be signed in to ArcGIS Online to add content to your favorites. Click Sign In in the top-right corner of the MDEB GIS Data Hub to log in to your AGOL account. Follow prompts to log in.\n\n\n\n\n\n\n\n\n\nAfter signing in, scroll through the gallery and find the feature service that you would like to add to your favorites. Click on the Add to Favorites button.\n\n\n\n\n\n\n\n\n\nAlternatively, navigate to the feature service landing page by clicking on View item details in the Content gallery. On the feature service landing page, click Add to Favorites below the feature service thumbnail.\n\n\n\n\n\n\n\n\n\nIn ArcGIS Pro, ensure that you are logged in to your portal. If you are logged in, your name and portal name will appear in the top-right corner of the ArcGIS Pro window. If you are not signed in, click Sign in using the Sign-in Status button in the top-right corner of the ArcGIS Pro window and follow prompts to log in to your portal. Next, navigate to the Catalog Pane, click on Portal, then My Favorites. Any feature services that you have added to your favorites will appear here. Right click on the feature service and click Add to Current Map to add the feature service to your project.\n\n\n\n\n\n\n\n\n\n\n\n\nTo add data to ArcGIS Pro via REST URL, first obtain the REST URL for the desired feature service from ArcGIS Online. You can obtain the REST URL from the MDEB GIS Data Hub using either the Content library or the Content gallery. We will use the Content gallery in this example. First, scroll through the gallery and find the feature service that you are interested in. Click on View item details to be taken to the feature service landing page.\n\n\n\n\n\n\n\n\n\nOn the landing page, scroll to the bottom until you see URL in the right-side pane. Click the Copy button to copy the REST URL to your clipboard.\n\n\n\n\n\n\n\n\n\nThen, open a new or existing project in ArcGIS Pro. On ArcGIS Pro, in the Header Ribbon click on Insert. In Insert, click on Connections, then Server, then New ArcGIS Server.\n\n\n\n\n\n\n\n\n\nPaste the URL into the Add ArcGIS Server Connection pop-up window in the Server URL box. Click OK. The ArcGIS Server connection will now appear in the Catalog Pane in the Project menu under Servers. Click on the right arrow to expand all server connections, and then click on the right arrow next to your desired server connection to see all feature services within the server. Right click on the desired feature service and click Add to Current Map to add the feature service to your project.",
+    "crumbs": [
+      "Content",
+      "Examples",
+      "Connecting ArcGIS Pro and AGOL"
+    ]
+  },
+  {
+    "objectID": "content/examples/using_arcgis.html#add-data-to-favorites",
+    "href": "content/examples/using_arcgis.html#add-data-to-favorites",
+    "title": "Connecting ArcGIS Pro and AGOL",
+    "section": "",
+    "text": "To add data to your favorites, navigate to the MDEB GIS Data Hub and find your desired feature service using either the Content library or the Content gallery. We will use the Content gallery in this example. You must be signed in to ArcGIS Online to add content to your favorites. Click Sign In in the top-right corner of the MDEB GIS Data Hub to log in to your AGOL account. Follow prompts to log in.\n\n\n\n\n\n\n\n\n\nAfter signing in, scroll through the gallery and find the feature service that you would like to add to your favorites. Click on the Add to Favorites button.\n\n\n\n\n\n\n\n\n\nAlternatively, navigate to the feature service landing page by clicking on View item details in the Content gallery. On the feature service landing page, click Add to Favorites below the feature service thumbnail.\n\n\n\n\n\n\n\n\n\nIn ArcGIS Pro, ensure that you are logged in to your portal. If you are logged in, your name and portal name will appear in the top-right corner of the ArcGIS Pro window. If you are not signed in, click Sign in using the Sign-in Status button in the top-right corner of the ArcGIS Pro window and follow prompts to log in to your portal. Next, navigate to the Catalog Pane, click on Portal, then My Favorites. Any feature services that you have added to your favorites will appear here. Right click on the feature service and click Add to Current Map to add the feature service to your project.",
+    "crumbs": [
+      "Content",
+      "Examples",
+      "Connecting ArcGIS Pro and AGOL"
+    ]
+  },
+  {
+    "objectID": "content/examples/using_arcgis.html#connect-to-an-arcgis-server-using-a-rest-url",
+    "href": "content/examples/using_arcgis.html#connect-to-an-arcgis-server-using-a-rest-url",
+    "title": "Connecting ArcGIS Pro and AGOL",
+    "section": "",
+    "text": "To add data to ArcGIS Pro via REST URL, first obtain the REST URL for the desired feature service from ArcGIS Online. You can obtain the REST URL from the MDEB GIS Data Hub using either the Content library or the Content gallery. We will use the Content gallery in this example. First, scroll through the gallery and find the feature service that you are interested in. Click on View item details to be taken to the feature service landing page.\n\n\n\n\n\n\n\n\n\nOn the landing page, scroll to the bottom until you see URL in the right-side pane. Click the Copy button to copy the REST URL to your clipboard.\n\n\n\n\n\n\n\n\n\nThen, open a new or existing project in ArcGIS Pro. On ArcGIS Pro, in the Header Ribbon click on Insert. In Insert, click on Connections, then Server, then New ArcGIS Server.\n\n\n\n\n\n\n\n\n\nPaste the URL into the Add ArcGIS Server Connection pop-up window in the Server URL box. Click OK. The ArcGIS Server connection will now appear in the Catalog Pane in the Project menu under Servers. Click on the right arrow to expand all server connections, and then click on the right arrow next to your desired server connection to see all feature services within the server. Right click on the desired feature service and click Add to Current Map to add the feature service to your project.",
+    "crumbs": [
+      "Content",
+      "Examples",
+      "Connecting ArcGIS Pro and AGOL"
+    ]
+  },
+  {
+    "objectID": "content/examples/using_r.html",
+    "href": "content/examples/using_r.html",
+    "title": "Connecting R and AGOL",
+    "section": "",
+    "text": "To connect R with ArcGIS Online (AGOL) you will need to use ESRI’s R-ArcGIS Bridge, a collection of R packages that integrates R with ArcGIS. The easiest way to install the R-ArcGIS Bridge is to install the {arcgis} metapackage,\ninstall.packages(\"arcgis\", repos = c(\"https://r-arcgis.r-universe.dev\", \"https://cloud.r-project.org\"))\nIt is recommended that you have the newest version of R installed, with a minimum R version of 4.3 or higher.\nOnce you have installed {arcgis} you can load all the packages using,\nlibrary(arcgis)\nThis will load:\nThe rest of this tutorial will show you how to 1) find a feature layer url on the MDEB GIS Data Hub and 2) read in the data from that feature layer.",
+    "crumbs": [
+      "Content",
+      "Examples",
+      "Connecting R and AGOL"
+    ]
+  },
+  {
+    "objectID": "content/examples/using_r.html#find-a-feature-layer-url",
+    "href": "content/examples/using_r.html#find-a-feature-layer-url",
+    "title": "Connecting R and AGOL",
+    "section": "Find a feature layer url",
+    "text": "Find a feature layer url\nNavigate to the MDEB GIS Data Hub.\n\n\n\n\n\n\n\n\n\nFind the survey that you’re interested in by using the Content library or the Content gallery. For this tutorial, we will use the Content library to focus on the Ecosystem Monitoring Survey (EcoMon). Once on EcoMon’s About page, scroll down to the I want to... section and click on the View Data Source link.\n\n\n\n\n\n\n\n\n\nIf you find yourself on the Explore page instead, don’t worry. You can navigate to the About page by clicking on the View Full Details button.\n\n\n\n\n\n\n\n\n\nAfter you click the View Data Source link, you will be brought to the feature service page.\n\n\n\n\n\n\n\n\n\nCopy the url in the address bar and store it in an R object, this is the url of the remote resource (feature service) that you will need for the next section of this tutorial.\n\n## url for EcoMon Strata feature layer\necomon_url &lt;- 'https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/Ecosystem_Monitoring_Survey/FeatureServer/1'",
+    "crumbs": [
+      "Content",
+      "Examples",
+      "Connecting R and AGOL"
+    ]
+  },
+  {
+    "objectID": "content/examples/using_r.html#read-in-data-from-a-feature-layer",
+    "href": "content/examples/using_r.html#read-in-data-from-a-feature-layer",
+    "title": "Connecting R and AGOL",
+    "section": "Read in data from a feature layer",
+    "text": "Read in data from a feature layer\nNow we will use the arc_read() function to extract the data from the EcoMon Strata feature layer and store the results in an R object called ecomon_strata.\n\n## Download EcoMon Survey strata from the MDEB GIS Data Hub\necomon_strata &lt;- arc_read(url = ecomon_url)\necomon_strata\n\n#&gt; Simple feature collection with 48 features and 11 fields\n#&gt; Geometry type: POLYGON\n#&gt; Dimension:     XY\n#&gt; Bounding box:  xmin: -75.96791 ymin: 35.14219 xmax: -65.16869 ymax: 44.48558\n#&gt; Geodetic CRS:  NAD83\n#&gt; First 10 features:\n#&gt;    OBJECTID                 SURVEY_NAME NUMOFPOLY NUMOFSTA REGION     AREA TYPE     ACRES Shape__Area Shape__Length\n#&gt; 1         1 Ecosystem Monitoring Survey         1        1    MAB 1540.432   SB  380709.0   0.1540434      2.314193\n#&gt; 2         2 Ecosystem Monitoring Survey         1        2    MAB 4496.485   MS 1110526.3   0.4498022      3.273956\n#&gt; 3         3 Ecosystem Monitoring Survey         1        2    MAB 3190.414   IS  788464.8   0.3184615      3.374652\n#&gt; 4         4 Ecosystem Monitoring Survey         1        1    MAB 2510.323   SB  620508.7   0.2548203      3.274308\n#&gt; 5         5 Ecosystem Monitoring Survey         1        5    MAB 9620.144   MS 2378814.2   0.9760387      4.144637\n#&gt; 6         6 Ecosystem Monitoring Survey         1        2    MAB 2726.496   IS  673994.9   0.2762439      3.118843\n#&gt; 7         7 Ecosystem Monitoring Survey         1        2    MAB 4804.352   SB 1187883.9   0.4939513      4.031104\n#&gt; 8         8 Ecosystem Monitoring Survey         1        4    MAB 8095.956   MS 2001253.5   0.8353470      3.985027\n#&gt; 9         9 Ecosystem Monitoring Survey         1        1    MAB 2391.726   IS  591364.0   0.2455178      2.838412\n#&gt; 10       10 Ecosystem Monitoring Survey         1        3    MAB 4720.303   SB 1167316.5   0.4908978      3.187865\n#&gt;    STR_NAME                       geometry\n#&gt; 1         1 POLYGON ((-74.76881 36.5052...\n#&gt; 2         2 POLYGON ((-74.81583 36.5052...\n#&gt; 3         3 POLYGON ((-75.72364 36.5060...\n#&gt; 4         4 POLYGON ((-74.3466 37.56465...\n#&gt; 5         5 POLYGON ((-74.63893 37.7118...\n#&gt; 6         6 POLYGON ((-75.54484 37.5418...\n#&gt; 7         7 POLYGON ((-73.38887 38.4968...\n#&gt; 8         8 POLYGON ((-74.44489 39.0486...\n#&gt; 9         9 POLYGON ((-74.93782 38.5007...\n#&gt; 10       10 POLYGON ((-72.7857 39.20539..\n\n## Plot\nplot(ecomon_strata['REGION'])\n\n\n\n\n\n\n\n\n\n\nYou can also use SQL where clauses to limit the number of rows returned from the hosted feature layer, especially if you only need a subset of the data. This can be very efficient, as reading a subset of the data into memory will be faster and less costly, relative to reading in the entire dataset (if you don’t need the entire dataset).\n\n## Query for only SNE strata\necomon_sne &lt;- arc_read(url = ecomon_url, where = \"REGION = 'SNE'\")\nplot(ecomon_sne['REGION'])\n\n\n\n\n\n\n\n\n\n\nYou can also select a subset of columns or fields to return from the feature layer, just populate the fields argument in the arc_read() function.",
+    "crumbs": [
+      "Content",
+      "Examples",
+      "Connecting R and AGOL"
+    ]
+  },
+  {
+    "objectID": "content/smit/bottom_trawl.html",
+    "href": "content/smit/bottom_trawl.html",
+    "title": "Bottom Trawl Survey",
+    "section": "",
+    "text": "ArcGIS Feature Service\nClick here.\n\n\nInPort Metadata\nYes, see here.\n\n\nDescription\nThe Northeast Fisheries Science Center (NEFSC) Bottom Trawl Survey (BTS) is the primary source of synoptic, shelf-wide, multiseason, annually repeated fish and oceanographic data on the Northeast U.S. Shelf. Furthermore, it is the primary data source of relative abundance data for 48 stock assessments (and an important component of an additional 6 assessments), as well as the source of population demography, maturity, and stomach contents data for the region. It is also a reliable source of other biological samples, as requested, from internal and external partners. The objectives of the NEFSC BTS are twofold: (1) to monitor trends in biological parameters (e.g., recruitment, biomass, growth, maturity, mortality) and geographic distribution of fish and invertebrates of the Northwest Atlantic Continental Shelf; and (2) collect and monitor ecosystem-level data for broad-scale oceanographic and environmental changes. The BTS is fully standardized, including sampling gear construction and performance, vessel(s), standard operating procedures, and spatiotemporal sampling consistency. Survey catch is identified to species level for all fish and a subset of invertebrates (i.e. decapods, cephalopods, some bivalves), and aggregate catch weights are recorded for each species. Biological samples and individual weights are collected for subsampled fish, subsampled invertebrates, and all protected species. The gear captures smaller size classes than commercial gears, and therefore provides estimates of cohorts before they enter the fishery, as well as critical samples of immature fish to inform maturity curves. Oceanographic sampling includes a vertical conductivity, temperature, and depth (CTD) cast at all trawl stations, oblique bongo plankton tows at a subset of stations, and continuous measurement of additional variables via a surface water flow-through system.\n\n\nSpatial Extent\n\n\n\n\n\n\n\n\nLayers\n\n\n\n\n\nid\nname\ntype\ngeometryType\n\n\n\n\n0\nSMIT_BTS_STRATA\nFeature Layer\nesriGeometryPolygon\n\n\n\n\n\n\n\nFields\n\nSMIT_BTS_STRATA\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\nAREA_SQNM\nArea (sq nm)\nArea of strata in square nautical miles\nesriFieldTypeBigInteger\n\n\nDEPTH_M\nDepth (m)\nAverage depth of strata in meters\nesriFieldTypeString\n\n\nSTRATA\nStrata\nStrata ID\nesriFieldTypeString\n\n\nN\nn\nSample count\nesriFieldTypeBigInteger\n\n\nSTRATA_NUM\nStrata number\nStrata ID number\nesriFieldTypeString\n\n\nREGION\nRegion\nStrata region ID\nesriFieldTypeString\n\n\nSECTOR\nSector\nStrata sector ID\nesriFieldTypeString\n\n\nSAMP_FREQ\nSampling frequency\nFrequency of strata sampling\nesriFieldTypeString\n\n\nEARLIEST_T\nEarliest tow\nYear of earliest tow in strata\nesriFieldTypeString\n\n\nLATEST_TOW\nLatest tow\nYear of latest tow in strata\nesriFieldTypeString",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation",
+      "Bottom Trawl Survey"
+    ]
+  },
+  {
+    "objectID": "content/smit/coastspan.html",
+    "href": "content/smit/coastspan.html",
+    "title": "Cooperative Atlantic States Shark Pupping and Nursery Survey",
+    "section": "",
+    "text": "ArcGIS Feature Service\nClick here.\n\n\nInPort Metadata\nYes, see here.\n\n\nDescription\nSurvey of inshore areas used by sharks for pupping and nurseries. Various locations have been surveyed, from the U.S. Virgin Islands to Massachusetts, most in partnership with state or academic institutions; the NEFSC only regularly surveys Delaware Bay.\n\n\nSpatial Extent\n\n\n\n\n\n\n\n\nLayers\n\n\n\n\n\nid\nname\ntype\ngeometryType\n\n\n\n\n0\nSMIT_COASTSPAN_STRATA\nFeature Layer\nesriGeometryPolygon\n\n\n\n\n\n\n\nFields\n\nSMIT_COASTSPAN_STRATA\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation",
+      "Cooperative Atlantic States Shark Pupping and Nursery Survey"
+    ]
+  },
+  {
+    "objectID": "content/smit/ecomon.html",
+    "href": "content/smit/ecomon.html",
+    "title": "Ecosystem Monitoring Survey",
+    "section": "",
+    "text": "ArcGIS Feature Service\nClick here.\n\n\nInPort Metadata\nYes, see here.\n\n\nDescription\nThe principal objective of Ecosystem Monitoring (EcoMon) program is to assess the hydrographic, planktonic and pelagic components of the Northeast U.S. Continental Shelf Ecosystem. Ecosystem Monitoring surveys contribute to stock assessments, protected species assessments, and ecosystem assessments. EcoMon surveys sample the continental shelf from 2 – 4 times per year. Plankton samples are also collected on the Northeast Fisheries Science Center spring and fall bottom trawl surveys.\n\n\nSpatial Extent\n\n\n\n\n\n\n\n\nLayers\n\n\n\n\n\nid\nname\ntype\ngeometryType\n\n\n\n\n0\nSMIT_ECOMON_STATIONS\nFeature Layer\nesriGeometryPoint\n\n\n1\nSMIT_ECOMON_STRATA\nFeature Layer\nesriGeometryPolygon\n\n\n\n\n\n\n\nFields\n\nSMIT_ECOMON_STATIONS\nDescriptionThere are thirty-five Ecosystem Monitoring fixed hydrographic sampling stations across the Northeast Shelf ecosystem. Four transects run from inshore to off the continental shelf from north of Cape Hatteras to Cape Cod. One transect bisects the Gulf of Maine from the coast of Maine and across Georges Bank. The remaining twelve stations in the Gulf of Maine sample deep basins, banks, coastal areas, and the inflow (Northeast Channel) and out flow (Great South Channel) of the gulf.\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\nEM_SEQ\nEm sequence\nEm sequence number\nesriFieldTypeDouble\n\n\nFIXED_SEQ\nFixed sequence\nFixed sequence number\nesriFieldTypeDouble\n\n\nNAME\nName\nUnique strata/station ID\nesriFieldTypeString\n\n\nREGION\nStrata region\nStrata groupings (MAB = Mid-Atlantic Bight, SNE = Southern New England, GB = Georges Bank, GOM = Gulf of Maine)\nesriFieldTypeString\n\n\nSTRATA\nStrata\nUnique strata ID number\nesriFieldTypeDouble\n\n\nDEPLOYMENT\nDeployment\nEquipment deployment type\nesriFieldTypeString\n\n\nBONGO_PROTOCOL\nBongo protocol\nBongo protocol\nesriFieldTypeString\n\n\nDEPTH\nDepth (m)\nStation depth in meters\nesriFieldTypeDouble\n\n\nLAT\nLatitude\nLatitude of survey station in decimal degrees\nesriFieldTypeDouble\n\n\nLON\nLongitude\nLongitude of survey station in decimal degrees\nesriFieldTypeDouble\n\n\n\n\n\nSMIT_ECOMON_STRATA\nDescriptionEcosystem Monitoring plankton stations are selected using a random-stratified design based on the Northeast Fisheries Science Center bottom trawl survey design. There are forty-seven plankton strata across the Northeast Shelf ecosystem. The strata are combined into four regions from Cape Hatteras to Cape Sable (Mid-Atlantic Bight, Southern New England, Georges Bank, and Gulf of Maine). Thirty randomly selected stations are targeted for sampling from each region during a survey.\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\nSTR_NAME\nStrata name\nName of the strata numeric from 1 to 47, except for one stratum that is split into two polygons. Strata 38 is split and the name was changed to distinguish the east and west polygons.\nesriFieldTypeDouble\n\n\nNUMOFPOLY\nNumber of polygons\nNumber of polygons that make up the strata (1 or 2)\nesriFieldTypeDouble\n\n\nNUMOFSTA\nNumber of stations\nNumber of plankton stations sampled in the strata for current ECOMON program\nesriFieldTypeDouble\n\n\nREGION\nStrata region\nStrata groupings (MAB = Mid-Atlantic Bight, SNE = Southern New England, GB = Georges Bank, GOM = Gulf of Maine)\nesriFieldTypeString\n\n\nAREA\nArea (sq km)\nArea of strata in square kilometers. Note area reported for 381 and 382 is the same, and equals total for the two polygons combined\nesriFieldTypeDouble\n\n\nTYPE\nType\nStrata description (C = coastal, IS = inner-shelf, MS = mid-shelf, SB = shelf break, Bank = bank, Off = off-shelf, Basin = deep basin)\nesriFieldTypeString\n\n\nACRES\nArea (acres)\nArea of strata in acres\nesriFieldTypeDouble",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation",
+      "Ecosystem Monitoring Survey"
+    ]
+  },
+  {
+    "objectID": "content/smit/gombll.html",
+    "href": "content/smit/gombll.html",
+    "title": "Gulf of Maine Bottom Longline Survey",
+    "section": "",
+    "text": "ArcGIS Feature Service\nClick here.\n\n\nInPort Metadata\nYes, see here.\n\n\nDescription\nThe Cooperative Gulf of Maine Bottom Longline Survey is conducted in the western and central Gulf of Maine. We work with our region’s commercial fishing community to collect fisheries data in rocky bottom habitats that complements data collected on our annual bottom trawl surveys. Rocky habitats are a challenge to sample with trawl survey gear. Our Bottom Longline Survey addresses that concern by using gear more likely to capture species that prefer rough-bottom habitat in the Gulf of Maine. The survey provides data on commercially and recreationally important fish species as well as critical information about data-poor species. Our survey provides a more complete picture of the abundance, distribution, and biology of commercially and recreationally important fish that live in rocky habitats. Longlines are good at sampling for fish in rocky areas, increasing the data available to study these populations. As a result, stock assessments are more robust and fishery managers have better information to go on when crafting fishing regulations. By working with fishermen to develop and execute this survey, we hope to build trust in the data produced. For more information, see Gulf of Maine Bottom Longline Survey.\n\n\nSpatial Extent\n\n\n\n\n\n\n\n\nLayers\n\n\n\n\n\nid\nname\ntype\ngeometryType\n\n\n\n\n0\nSMIT_GOMBLL_STRATA\nFeature Layer\nesriGeometryPolygon\n\n\n\n\n\n\n\nFields\n\nSMIT_GOMBLL_STRATA\nDescriptionScientific survey strata for the Gulf of Maine Bottom Longline Survey.\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\nSTR2\nStr2\nThe predefined area where the longline gear was assigned to be deployed. Stratum is a two digit number referring to the stratum number from the SVDBS stratum definition.\nesriFieldTypeBigInteger\n\n\nSTRATUMA\nStratum\nA predefined area where longline gear was deployed. Code consists of 2 parts: Stratum group code number (2 bytes) and stratum number (3 bytes).\nesriFieldTypeString\n\n\nNUMPICKS\nNumber of picks\nNumber of survey stations within strata\nesriFieldTypeBigInteger\n\n\nCALCULATED\nArea (sq km)\nArea of strata in square kilometers\nesriFieldTypeDouble",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation",
+      "Gulf of Maine Bottom Longline Survey"
+    ]
+  },
+  {
+    "objectID": "content/smit/index.html",
+    "href": "content/smit/index.html",
+    "title": "Survey Mitigation",
+    "section": "",
+    "text": "Supporting scientific survey planning and requirements to mitigate impacts to NOAA Fisheries scientific surveys.",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation"
+    ]
+  },
+  {
+    "objectID": "content/smit/narw.html",
+    "href": "content/smit/narw.html",
+    "title": "North Atlantic Right Whale Aerial Survey",
+    "section": "",
+    "text": "ArcGIS Feature Service\nClick here.\n\n\nInPort Metadata\nYes, see here.\n\n\nDescription\nThe North Atlantic Right Whale Aerial Survey is a NOAA Fisheries program conducted by the Northeast Fisheries Science Center, which conducts aerial surveys to locate and record the seasonal distribution of North Atlantic Right Whales (Eubalaena glacialis) off the northeastern coast of the United States. The purpose of these North Atlantic Right Whale (NARW) aerial surveys is to monitor the population, track injury rates, and identify areas of entanglement and vessel collision risks. The Marine Mammal Protection Act (MMPA) and Endangered Species Act (ESA) mandates the National Marine Fisheries Service (NMFS) to evaluate the status of the NARW population and reduce mortality below the population’s Potential Biological Removal (PBR) in order for the species to recover. A major component of the surveys is photo identification of individual right whales to estimate the population and its annual rate of mortality. Distance sampling data is collected for all large whale species during systematic aerial surveys of neritic waters of the eastern seaboard of the U.S. Additional aerial surveys are focused in areas of seasonal right whale occurrence. Right whale absolute density (individuals km2) is calculated from spatial, temporal, and environmental covariates, accounting for detectability differences between observation conditions, and corrected for perception and availability biases, whale dive behavior, group composition, and group size. Seasonal densities are calculated using covariate maps. When right whales are encountered, the aircraft breaks from the systematic trackline to circle and collect photographs of natural markings on the whales for individual identification using handheld digital cameras. Estimation of the NARW population is based on a state-space model of the sighting histories of individual whales constructed from the central photo-ID catalog curated at the New England Aquarium. Most of the population is photographically captured each year. The comprehensive capture effort provides small credible intervals to the population estimate, which in turn provides relatively precise estimates of annual mortality. High precision estimates of right whale mortality are critical to evaluate effects of management actions in meeting conservation goals. Photographic captures in specific areas over shorter periods can provide estimates of both local abundance and seasonal residency of individuals. The track lines displayed here are surveyed by the NEFSC or its contractors. While they illustrate the general extent of survey coverage, they do not represent a comprehensive record. For near real-time visualizations of survey effort, please see WhaleMap.\n\n\nSpatial Extent\n\n\n\n\n\n\n\n\nLayers\n\n\n\n\n\nid\nname\ntype\ngeometryType\n\n\n\n\n0\nSMIT_NARW_LINES\nFeature Layer\nesriGeometryPolyline\n\n\n1\nSMIT_NARW_STRATA\nFeature Layer\nesriGeometryPolygon\n\n\n\n\n\n\n\nFields\n\nSMIT_NARW_LINES\nDescriptionAerial survey lines for the North Atlantic Right Whale Aerial Survey.\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\nLOCATION\nLocation\nName of survey area/location\nesriFieldTypeString\n\n\nMILES\nLength (miles)\nLength of survey line in miles\nesriFieldTypeDouble\n\n\n\n\n\nSMIT_NARW_STRATA\nDescriptionScientific survey footprint for the North Atlantic Right Whale Aerial Survey.\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation",
+      "North Atlantic Right Whale Aerial Survey"
+    ]
+  },
+  {
+    "objectID": "content/smit/scallop.html",
+    "href": "content/smit/scallop.html",
+    "title": "Sea Scallop Survey",
+    "section": "",
+    "text": "ArcGIS Feature Service\nClick here.\n\n\nInPort Metadata\nYes, see here.\n\n\nDescription\nThe standardized scallop dredge survey has been conducted since 1979 and employs a stratified random sampling design. The original NEFSC Shellfish Strata were based primarily on depth and secondarily by latitude, and locations of sampling stations were randomly selected within each stratum prior to each annual cruise. Starting in 2025, the Scallop Area Management Simulator (SAMS) areas were used as survey strata. Use of the SAMS areas as strata ensures that sampling is more useful to management. The dredge survey also implemented a spatially balanced form of stratified random sampling called Generalized Random Tessellation Stratified (GRTS) in 2025. While still a form of stratified random sampling, this method prevents random stations from being placed very close together.\n\n\nSpatial Extent\n\n\n\n\n\n\n\n\nLayers\n\n\n\n\n\nid\nname\ntype\ngeometryType\n\n\n\n\n0\nSMIT_SCALLOP_STRATA\nFeature Layer\nesriGeometryPolygon\n\n\n1\nSMIT_SCALLOP_STRATA_HISTORIC\nFeature Layer\nesriGeometryPolygon\n\n\n\n\n\n\n\nFields\n\nSMIT_SCALLOP_STRATA\nDescriptionThe current (as of 2025) NEFSC Scallop Strata (SAMS). Starting in 2025, a spatially balanced form of stratified random sampling called Generalized Random Tessellation Stratified (GRTS) was implemented, along with a switch to using Scallop Area Management Simulator (SAMS) areas as survey strata. While still a form of stratified random sampling, this method prevents random stations from being placed very close together. Use of the SAMS areas as strata ensures that sampling is more useful to management.\n\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\nSAMS\nSAMS\nSAMS code\nesriFieldTypeString\n\n\nNEWSAMS\nNew SAMS\nNew SAMS code\nesriFieldTypeString\n\n\nAREAKM2\nArea (sq km)\nArea of strata in square kilometers\nesriFieldTypeDouble\n\n\n\n\n\nSMIT_SCALLOP_STRATA_HISTORIC\nDescriptionThe historic (pre-2025) NEFSC Shellfish Strata. The standardized scallop dredge survey has been conducted since 1975 (annually since 1977) and employs a stratified random sampling design. The original NEFSC Shellfish Strata were based primarily on depth and secondarily by latitude, and locations of sampling stations were randomly selected within each stratum prior to each annual cruise.\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\nAREA\nArea\nArea of strata in degrees\nesriFieldTypeDouble\n\n\nPERIMETER\nPerimeter\nPerimeter of strata in degrees\nesriFieldTypeDouble\n\n\nSTRATA_\nStrata\nStrata number\nesriFieldTypeBigInteger\n\n\nSTRATA_ID\nStrata ID\nStrata ID\nesriFieldTypeBigInteger\n\n\nA2\nA2\nA2\nesriFieldTypeBigInteger\n\n\nSTRATUM\nStratum\nStratum code\nesriFieldTypeBigInteger\n\n\nDEPTH_CODE\nDepth code\nDepth code\nesriFieldTypeBigInteger\n\n\nACRES\nArea (acres)\nArea of strata in acres\nesriFieldTypeDouble",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation",
+      "Sea Scallop Survey"
+    ]
+  },
+  {
+    "objectID": "content/smit/shrimp.html",
+    "href": "content/smit/shrimp.html",
+    "title": "Northern Shrimp Survey",
+    "section": "",
+    "text": "ArcGIS Feature Service\nClick here.\n\n\nInPort Metadata\nYes, see here.\n\n\nDescription\nThe Northern Shrimp Survey was initiated in 1983 by the Atlantic States Marine Fisheries Commission (ASMFC) and monitors the relative abundance (number of shrimp), biomass (weight of shrimp), and composition of the northern shrimp stock throughout the Gulf of Maine. The data give an understanding of year class strength and sex stage and maturity of shrimp in the population. The survey focuses its efforts in offshore waters (in depths greater than 50 fathoms) and is timed to sample both males and females during the summer when they are expected to be offshore. The data it collects forms the basis of the annual northern shrimp assessment, which in turn, is used by fishery managers from Maine, New Hampshire and Massachusetts to set each year’s fishing regulations.\n\n\nSpatial Extent\n\n\n\n\n\n\n\n\nLayers\n\n\n\n\n\nid\nname\ntype\ngeometryType\n\n\n\n\n0\nSMIT_SHRIMP_STRATA\nFeature Layer\nesriGeometryPolygon\n\n\n\n\n\n\n\nFields\n\nSMIT_SHRIMP_STRATA\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString\n\n\nSHRIMPST_1\nShrimp ID\nShrimp ID number\nesriFieldTypeDouble\n\n\nSTRATUMA\nStratum\nA predefined area where a net dredge, or other piece of gear was deployed. Code consists of 2 parts: Stratum group code number (2 bytes) and stratum number (3 bytes). Stratum group refers to if area fished is inshore or offshore North or South of Cape Hatteras or the type of cruise (shellfish, State of MA, offshore deepwater). The stratum number (third and fourth digits of code) refers to area defined by depth zone. See SVDBS.SVMSTRATA. The fifth digit of the code increases the length of the stratum number for revised strata after the Hague Line was established.\nesriFieldTypeString\n\n\nSTRA_ACRES\nArea (acres)\nArea of strata in acres\nesriFieldTypeDouble",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation",
+      "Northern Shrimp Survey"
+    ]
+  },
+  {
+    "objectID": "content/smit/turtle.html",
+    "href": "content/smit/turtle.html",
+    "title": "Turtle Ecology Survey",
+    "section": "",
+    "text": "ArcGIS Feature Service\nClick here.\n\n\nInPort Metadata\nYes, see here.\n\n\nDescription\nThe primary goal of the Turtle Ecology program is to assess and monitor sea turtle populations in the Greater Atlantic Region in order to support scientific resource management needs and species recovery goals, as mandated through the Endangered Species Act and other federal statutes. Our research approach provides infrastructure, data streams, and data products through partnership with a wide array of organizations.\n\n\nSpatial Extent\n\n\n\n\n\n\n\n\nLayers\n\n\n\n\n\nid\nname\ntype\ngeometryType\n\n\n\n\n0\nSMIT_TURTLE_STRATA\nFeature Layer\nesriGeometryPolygon\n\n\n\n\n\n\n\nFields\n\nSMIT_TURTLE_STRATA\n\n\n\n\n\n\n\n\n\nname\nalias\ndescription\ndataType\n\n\n\n\nOID\nOID\nOriginal object ID\nesriFieldTypeBigInteger\n\n\nSURVEY_NAME\nSurvey name\nName of NEFSC scientific survey\nesriFieldTypeString",
+    "crumbs": [
+      "Content",
+      "Survey Mitigation",
+      "Turtle Ecology Survey"
+    ]
+  }
+]
