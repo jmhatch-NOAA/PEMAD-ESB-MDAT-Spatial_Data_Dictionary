@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/index.html</loc>
-    <lastmod>2026-07-29T16:39:19.471Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/smit_sop.html</loc>
-    <lastmod>2026-07-29T16:39:19.471Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/seal.html</loc>
-    <lastmod>2026-07-29T16:39:19.470Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/pam.html</loc>
-    <lastmod>2026-07-29T16:39:19.469Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/mmst.html</loc>
-    <lastmod>2026-07-29T16:39:19.468Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/hook_line.html</loc>
-    <lastmod>2026-07-29T16:39:19.467Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/edna.html</loc>
-    <lastmod>2026-07-29T16:39:19.466Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/csbll.html</loc>
-    <lastmod>2026-07-29T16:39:19.465Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/clam_quahog.html</loc>
-    <lastmod>2026-07-29T16:39:19.462Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/hub/index.html</loc>
-    <lastmod>2026-07-29T16:39:19.460Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/examples/using_arcgis.html</loc>
-    <lastmod>2026-07-29T16:39:19.006Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/examples/index.html</loc>
-    <lastmod>2026-07-29T16:39:19.006Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/examples/using_r.html</loc>
-    <lastmod>2026-07-29T16:39:19.007Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/bottom_trawl.html</loc>
-    <lastmod>2026-07-29T16:39:19.461Z</lastmod>
-  </url>
-  <url>
     <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/coastspan.html</loc>
-    <lastmod>2026-07-29T16:39:19.462Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/ecomon.html</loc>
-    <lastmod>2026-07-29T16:39:19.465Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/gombll.html</loc>
-    <lastmod>2026-07-29T16:39:19.466Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/index.html</loc>
-    <lastmod>2026-07-29T16:39:19.467Z</lastmod>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
   </url>
   <url>
     <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/narw.html</loc>
-    <lastmod>2026-07-29T16:39:19.468Z</lastmod>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/index.html</loc>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/clam_quahog.html</loc>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/ecomon.html</loc>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
   </url>
   <url>
     <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/scallop.html</loc>
-    <lastmod>2026-07-29T16:39:19.469Z</lastmod>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/pam.html</loc>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/mmst.html</loc>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/hook_line.html</loc>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/examples/using_arcgis.html</loc>
+    <lastmod>2026-07-29T18:17:40.572Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/hub/index.html</loc>
+    <lastmod>2026-07-29T18:17:40.865Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/index.html</loc>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/examples/using_r.html</loc>
+    <lastmod>2026-07-29T18:17:40.572Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/examples/index.html</loc>
+    <lastmod>2026-07-29T18:17:40.572Z</lastmod>
   </url>
   <url>
     <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/shrimp.html</loc>
-    <lastmod>2026-07-29T16:39:19.470Z</lastmod>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/bottom_trawl.html</loc>
+    <lastmod>2026-07-29T18:17:40.865Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/edna.html</loc>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/gombll.html</loc>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
   </url>
   <url>
     <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/turtle.html</loc>
-    <lastmod>2026-07-29T16:39:19.471Z</lastmod>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/smit_sop.html</loc>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/csbll.html</loc>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhatch-NOAA.github.io/PEMAD-ESB-MDAT-Data_Dictionary/content/smit/seal.html</loc>
+    <lastmod>2026-07-29T18:17:40.867Z</lastmod>
   </url>
 </urlset>
