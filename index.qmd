@@ -19,7 +19,7 @@ This data dictionary is meant to catalog and communicate the structure and conte
 
 TBD
 
-## NOAA Geoplatform
+## NOAA GeoPlatform
 
 [Requirements for Public Content](https://docs.google.com/document/d/1MkWFyFY0Ptij6bPfC6T9kyAFupXiYEigF84klpqG76c/edit?tab=t.0#heading=h.q73ivxplnx2) 
 
