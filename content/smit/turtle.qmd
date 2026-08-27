@@ -79,6 +79,13 @@ turtle_fields = purrr::map(.x = 1:nrow(turtle_layers), .f = function(.x) {
   # open layer
   turtle_layer = arcgislayers::arc_open(url = paste0(turtle_url, '/', turtle_layers$id[.x]))
   
+  # get metadata for layer
+  turtle_layer_meta = arcgisutils::fetch_layer_metadata(url = paste0(turtle_url, '/', turtle_layers$id[.x]))
+  
+  # layer description
+  layer_desc =  turtle_layer_meta$description
+  layer_desc = gsub("\\n", '', layer_desc) 
+  
   # get fields
   turtle_fields = arcgislayers::list_fields(turtle_layer) |>
     dplyr::select(name, alias, description, type) |>
@@ -92,7 +99,9 @@ turtle_fields = purrr::map(.x = 1:nrow(turtle_layers), .f = function(.x) {
   
   # output
   cat('\n####', turtle_layers$name[.x], '\n')
-    print(knitr::kable(turtle_fields))
+  cat('<em>Description</em><br>')
+  cat(layer_desc, '\n')
+  print(knitr::kable(turtle_fields))
   cat('\n')
 
 })
